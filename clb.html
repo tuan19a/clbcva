@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLB THPT Chuyên Chu Văn An - Bình Định</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .banner {
+            height: 70vh;
+            background-image: url("1.jpg"); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+        }
+
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .banner h2 {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+            font-style: italic;
+            border-top: 2px solid #fff;
+            display: inline-block;
+            padding-top: 10px;
+        }
+
+        .club-section {
+            display: flex;
+            padding: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .text-box {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .img-box {
+            flex: 1;
+            text-align: center;
+        }
+
+        .img-box img {
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        h3 {
+            color: #8B0000;
+            font-size: 1.8rem;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .reverse .text-box {
+            padding-right: 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 5px solid #8B0000; 
+        }
+
+        footer h4 {
+            margin: 0 0 15px 0;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        footer .address {
+            margin: 5px 0; 
+            font-size: 1rem; 
+            color: #ccc;
+            font-style: italic;
+        }
+
+        footer .copyright {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        footer .author {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .club-section, .reverse {
+                flex-direction: column;
+            }
+            .text-box, .reverse .text-box {
+                padding: 0;
+            }
+            .img-box img {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h2>CLB THPT Chuyên Chu Văn An</h2>
+            <p>Hoài Nhơn - Bình Định</p>
+        </div>
+    </div>
+
+    <div class="club-section">
+        <div class="text-box">
+            <h3>1. UnderLight - CLB Diễn Xuất</h3>
+            <p>
+                "UnderLight" - Nơi mọi cảm xúc thăng hoa dưới ánh đèn sân khấu. 
+                Không chỉ là diễn xuất, đây là nơi các bạn trẻ được thử thách bản thân 
+                qua việc viết kịch bản, dàn dựng và hóa thân vào muôn vàn kiếp nhân vật. 
+                CLB là ngôi nhà chung cho những tâm hồn nghệ thuật, cùng nhau tạo nên 
+                những vở kịch chạm đến trái tim khán giả trường Chu Văn An.
+            </p>
+        </div>
+        <div class="img-box">
+            <img src="2.jpg" alt="UnderLight - CLB Diễn Xuất">
+        </div>
+    </div>
+
+    <div class="club-section reverse">
+        <div class="text-box">
+            <h3>2. CESC - Chu Van An English Speaking Club</h3>
+            <p>
+                "Dare to Speak, Dare to Shine" - CESC là môi trường lý tưởng để các CVA-ers 
+                phá bỏ rào cản ngôn ngữ. Không chỉ dừng lại ở việc học ngữ pháp, 
+                đây là nơi bạn rèn luyện tư duy phản biện (Debate), khả năng thuyết trình 
+                và giao lưu văn hóa qua các trò chơi thú vị. CESC chính là bệ phóng 
+                để học sinh Chu Văn An tự tin vươn ra biển lớn.
+            </p>
+        </div>
+        <div class="img-box">
+            <img src="3.jpg" alt="CESC - Chu Van An English Speaking Club">
+        </div>
+    </div>
+
+    <div class="club-section">
+        <div class="text-box">
+            <h3>3. Chu Văn An Basketball W0G Club</h3>
+            <p>
+                "Bóng rổ không chỉ là môn thể thao, đó là phong cách sống". 
+                W0G Club là ngôi nhà của những "chiến binh" thực thụ trên sân đấu. 
+                Nơi mồ hôi rơi xuống để đổi lấy những pha Dunk rổ mãn nhãn và những chiến thắng vinh quang. 
+                Đến với W0G, bạn sẽ tìm thấy những người đồng đội, những người anh em luôn sát cánh bên nhau từ sân tập đến cuộc sống.
+            </p>
+        </div>
+        <div class="img-box">
+            <img src="4.jpg" alt="Chu Văn An Basketball W0G Club">
+        </div>
+    </div>
+
+    <div class="club-section reverse">
+        <div class="text-box">
+            <h3>4. IGC - Intellectual Games Club</h3>
+            <p>
+                Sân chơi đẳng cấp dành cho những "bộ óc chiến lược". 
+                IGC không chỉ là nơi giải trí với Boardgame, Cờ vua, Rubik hay Ma sói... 
+                mà còn là nơi rèn luyện tư duy logic, khả năng phán đoán và kỹ năng làm việc nhóm. 
+                Nếu bạn muốn tìm kiếm niềm vui qua những màn đấu trí kịch tính, IGC chính là nơi dành cho bạn.
+            </p>
+        </div>
+        <div class="img-box">
+            <img src="5.jpg" alt="IGC - Intellectual Games Club">
+        </div>
+    </div>
+
+    <footer>
+        <h4>Trường THPT Chuyên Chu Văn An</h4>
+        <p class="address">
+            📍 Địa chỉ: Khu phố 2, Phường Bồng Sơn, Thị xã Hoài Nhơn, Tỉnh Bình Định
+        </p>
+        <div class="copyright">
+            &copy; 2025 Designed by <span class="author">Huỳnh Anh Tuấn (12 Tin)</span>
+        </div>
+    </footer>
+
+</body>
+</html>
